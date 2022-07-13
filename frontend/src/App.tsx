@@ -1,12 +1,20 @@
-import NotificationButton from "./components/NotificationButton"
+import Header from "./components/header"
 
-function App() {
+import NotificationButton from "./components/NotificationButton"
+import SalesCard from "./components/SalesCard"
+function App(): JSX.Element {
 
   return (
     <>
-      <h1>Óla mundo!</h1>
-      <NotificationButton></NotificationButton>
-      <NotificationButton></NotificationButton>
+      <Header></Header>
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div >
+        </section >
+      </main >
+
     </>
   )
 }
